@@ -1,0 +1,76 @@
+.header {
+    background-color: black;
+    color: #ffffff;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.main-logo {
+    color: #ffffff;
+    width: 50px;
+    margin-top: 40;
+    height: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    color: lightyellow;
+    font-weight: 500;
+    font-family: Arial, Helvetica, 'Helvetica Neue', sans-serif;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    margin-top: 3px;
+    padding: 10px 15px;
+    border: 1px solid whitesmoke;
+    border-radius: 3px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.link:hover,
+.link.active {
+    background-color: #3d3d3d;
+    transform: translateY(-2px);
+}
+
+
+
+.profile-icon {
+    color: #ffffff;
+    width: 50px;
+    height: 25px;
+    cursor: pointer;
+}
+
+
+.profile-icon:hover {
+    color: grey;
+
+}

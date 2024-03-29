@@ -1,0 +1,153 @@
+/* Base styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+}
+
+.main {
+    background-image: url("../assets/bg-image.jpg");
+    background-repeat: no-repeat;
+    /* background-position: left center; */
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 20px;
+    background-color: white;
+    height: 89vh;
+
+}
+
+.drop-container {
+    width: 400px;
+    height: 460px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid grey;
+    color: white;
+    cursor: pointer;
+    background: #121212;
+    /* White background for contrast with the main area */
+    transition: background-color .3s ease, border-color .3s ease;
+}
+
+/* .drop-container:hover {
+    background-color: #f1f1f1;
+    border-color: #0056b3;
+} */
+
+.drop-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+input[type=file] {
+    width: 100%;
+    margin: -15px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color .3s ease;
+}
+
+input[type=file]:hover {
+    border-color: #007bff;
+}
+
+input[type=file]::file-selector-button {
+    border: none;
+    background: #007bff;
+    padding: 8px 20px;
+    border-radius: 5px;
+    color: #fff;
+    margin-left: 10px;
+    transition: background-color .3s ease;
+}
+
+input[type=file]::file-selector-button:hover {
+    background: #0056b3;
+}
+
+.dropdown {
+    width: 100%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.dropdown:hover {
+    background-color: gainsboro;
+}
+
+.btn {
+    font-size: 16px;
+    margin-top: -10px;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+
+.btn:link {
+    background-color: grey;
+}
+
+
+.btn:visited {
+    background-color: grey;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn:active {
+    background-color: grey;
+}
+
+.instruction {
+    padding: 5px;
+}
+
+.instruction1 {
+    font-size: 15px;
+    margin-bottom: -10px;
+}
+
+.error-message {
+    color: #d9534f;
+    font-size: 16px;
+}
+
+.success-message {
+    color: #28a745;
+    /* Green color for success message */
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+@media (max-width: 600px) {
+
+    .drop-container,
+    .dropdown,
+    input[type=file] {
+        width: 100%;
+    }
+}
