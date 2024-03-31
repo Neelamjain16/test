@@ -13,7 +13,11 @@
 .app {
     /* margin: 20px auto; */
     background-color: white;
-
+    background-image: url("../assets/ai_law.avif");
+    background-repeat: no-repeat;
+    background-size: 312px 312px;
+    background-position: right bottom;
+    /* background-size: cover; */
     width: 100%;
     min-height: 89.5vh;
     display: flex;
@@ -51,7 +55,7 @@ td {
 }
 
 th {
-    background-color: darkkhaki;
+    background-color: #c7bdb1;
     color: white;
 }
 

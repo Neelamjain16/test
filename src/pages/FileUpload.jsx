@@ -48,7 +48,7 @@ function FileUpload({ onInputChange }) {
         <div className="drop-container">
           <p className='instruction1'>Choose your Legal document type here</p>
           <select value={selectedOption} onChange={handleChange} className="dropdown">
-            <option value="Option 1">Msa</option>
+            <option value="Option 1" className='dropdown-option'>MSA</option>
 
           </select>
           <span className="drop-title">Drop files here</span>
